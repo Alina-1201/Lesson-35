@@ -7,6 +7,8 @@ let btnMultiply = document.querySelector('.btn_multiply')
 let btnDividet = document.querySelector('.btn_dividet')
 let btnKv1 = document.querySelector('.btn_kv1')
 let btnKv2 = document.querySelector('.btn_kv2')
+let btnSqrt1 = document.querySelector('.btn_sqrt1')
+let btnSqrt2 = document.querySelector('.btn_sqrt2')
 
 btnPlus.onclick = function(){
     let sum = firstNumber.value*1 + secondNumber.value*1
@@ -42,4 +44,14 @@ btnKv1.onclick = function(){
 btnKv2.onclick = function(){
     let kv2 = secondNumber.value**2
     result.textContent = kv2
+}
+
+btnSqrt1.onclick = function(){
+    let sqrt1 = Math.sqrt(firstNumber.value)
+    result.textContent = sqrt1
+}
+
+btnSqrt2.onclick = function(){
+    let sqrt2 = Math.sqrt(secondNumber.value)
+    result.textContent = sqrt2
 }
